@@ -35,11 +35,11 @@ La aplicacion va a correr por defecto en la URL http://localhost:8080.
 
 Explorar las Rest APIs
 
-GET http://localhost:8080/api/v1/clientes"
+GET http://localhost:8080/api/clientes"
 
-GET http://localhost:8080/api/v1/clienteId/{id}" 
+GET http://localhost:8080/api/clienteId/{id}" 
 
-GET http://localhost:8080/api/v1/clienteNombre/{nombre}"
+GET http://localhost:8080/api/clienteNombre/{nombre}"
 
 POST http://localhost:8080/api/cliente
 
