@@ -13,8 +13,11 @@ https://github.com/Ferp97/ShopsRUs.git
 
 create database proyecto;
 
+3. Darle permisos de su usuario a la base de datos 
 
-3. Cambiar el usuario y la contraseña de la base de datos de acuerdo a tu instalacion
+grant all privileges on database proyecto to SU_USUARIO;
+
+4. Cambiar el usuario y la contraseña de la base de datos de acuerdo a tu instalacion
 
 Abrir src/main/resources/application.properties
 
@@ -23,13 +26,8 @@ spring.datasource.username =
 spring.datasource.password =
 Ingresar el usuario y la contraseña de acuerdo a la instalacion de la computadora
 
-4. Construya y corra la aplicación utilizando Maven
+5. Construya y corra la aplicación utilizando Maven
 
-mvn package
-java -jar target/spring-boot-rest-api-tutorial-0.0.1-SNAPSHOT.jar
-Alternatively, you can run the app without packaging it using -
-
-mvn spring-boot:run
 
 La aplicacion va a correr por defecto en la URL http://localhost:8080.
 
@@ -41,9 +39,15 @@ GET http://localhost:8080/api/clienteId/{id}"
 
 GET http://localhost:8080/api/clienteNombre/{nombre}"
 
-POST http://localhost:8080/api/cliente
+POST http://localhost:8080/api/clientes
 
 GET http://localhost:8080/api/descuento
 
 PUT http://localhost:8080/api/descuento
+
+GET http://localhost:8080/api/factura
+
+GET http://localhost:8080/api/facturaId/{id}
+
+PUT http://localhost:8080/api/factura
 
